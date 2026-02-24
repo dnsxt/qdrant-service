@@ -1,7 +1,7 @@
 services:
   -type: web
   name: qdrant-service
-  env: docker
+  runtime: docker
   plan: free
   autoDeploy: true
   disk:
