@@ -1,10 +1,10 @@
 services:
- -type: web
-  name: qdrant-service
-  env: docker
-  plan: free
-  autoDeploy: true
-  disk:
-    name: qdrant-data
-    mountPath: /qdrant/storage
-    sizeGB: 1
+  - type: web
+    name: qdrant-service
+    env: docker
+    plan: free
+    autoDeploy: true
+    disk:
+      name: qdrant-data
+      mountPath: /qdrant/storage
+      sizeGB: 1
